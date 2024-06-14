@@ -9,7 +9,7 @@ all:
 	rm -rf ./other/bash/.bashrc
 	cp ~/.bashrc ./other/bash/.bashrc
 
-	# hyprland
+	# hypr ecosystem
 	rm -rf ./.config/hypr/
 	cp -r ~/.config/hypr/ ./.config/
 
