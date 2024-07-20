@@ -26,4 +26,3 @@ all:
 	@cp -r ~/.config/nvim/ ./.config/
 
 	@echo ">> Done"
-

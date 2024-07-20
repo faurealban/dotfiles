@@ -2,22 +2,22 @@
 
 connect_mouse ()
 {
-    bluetoothctl connect E9:E5:B0:D8:08:10 > /dev/null && echo "|> Mouse connected"
+    bluetoothctl connect E9:E5:B0:D8:08:10 && echo "|> Mouse connected"
 }
 
 connect_headphones ()
 {
-    bluetoothctl connect 40:47:6A:20:C4:8E > /dev/null && echo "|> Headphones connected"
+    bluetoothctl connect 40:47:6A:20:C4:8E && echo "|> Headphones connected"
 }
 
 enable_bluetooth ()
 {
-    sudo systemctl start --quiet bluetooth && echo "|> Bluetooth enabled"
+    systemctl start --quiet bluetooth && echo "|> Bluetooth enabled"
 }
 
 disable_bluetooth ()
 {
-    sudo systemctl stop --quiet bluetooth && echo "|> Bluetooth disabled"
+    systemctl stop --quiet bluetooth && echo "|> Bluetooth disabled"
 }
 
 POSITIONAL_ARGS=()
