@@ -5,12 +5,11 @@
 
 <details>
 <summary>All programs</summary>
+grim
 hypridle
 hyprland
 hyprlock
-</details>
-
-<details>
-<summary>Covered programs</summary>
-
+hyprshade
+kitty
+obsidian
 </details>
