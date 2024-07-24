@@ -1,40 +1,14 @@
-/*
- * Vibrance
- *
- * Enhance color saturation.
- * Also supports per-channel multipliers.
- *
- * Source: https://github.com/hyprwm/Hyprland/issues/1140#issuecomment-1614863627
- */
+// from https://github.com/hyprwm/Hyprland/issues/1140#issuecomment-1614863627
 
 precision highp float;
 varying vec2 v_texcoord;
 uniform sampler2D tex;
 
 // see https://github.com/CeeJayDK/SweetFX/blob/a792aee788c6203385a858ebdea82a77f81c67f0/Shaders/Vibrance.fx#L20-L30
+const vec3 VIB_RGB_BALANCE = vec3(1.0, 1.0, 1.0);
+const float VIB_VIBRANCE = 1.0;
 
-/**
- * Per-channel multiplier to vibrance strength.
- *
- * @min 0.0
- * @max 10.0
- */
-const vec3 Balance = vec3(
-    float({{#nc}}{{balance.red}} ? 1.0{{/nc}}),
-    float({{#nc}}{{balance.green}} ? 1.0{{/nc}}),
-    float({{#nc}}{{balance.blue}} ? 1.0{{/nc}})
-);
-
-/**
- * Strength of filter.
- * (Negative values will reduce vibrance.)
- *
- * @min -1.0
- * @max 1.0
- */
-const float Strength = 1.0; //float({{#nc}}{{strength}} ? 0.15{{/nc}});
-
-const vec3 VIB_coeffVibrance = Balance * -Strength;
+const vec3 VIB_coeffVibrance = VIB_RGB_BALANCE * -VIB_VIBRANCE;
 
 void main() {
     vec4 pixColor = texture2D(tex, v_texcoord);
@@ -58,5 +32,3 @@ void main() {
 
     gl_FragColor = pixColor;
 }
-
-// vim: ft=glsl

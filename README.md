@@ -9,7 +9,9 @@ grim
 hypridle
 hyprland
 hyprlock
+hyprpaper
 hyprshade
 kitty
 obsidian
+fcitx5
 </details>
