@@ -9,8 +9,7 @@ alias col="~/.config/scripts/utils/show_colors.sh"
 alias bt="~/.config/scripts/bluetooth/onoff.sh"
 alias conf="nvim ~/.config/"
 
-alias add="git add"
-alias commit="git commit -m"
+alias commit="git add . && git commit -m"
 alias push="git push"
 
 # functions

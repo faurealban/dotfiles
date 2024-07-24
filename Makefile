@@ -25,4 +25,8 @@ all:
 	@rm -rf ./.config/nvim/
 	@cp -r ~/.config/nvim/ ./.config/
 
+	@# tuigreet
+	@rm -rf ./other/greetd/config.toml
+	@cp -r /etc/greetd/config.toml ./other/greetd/config.toml
+
 	@echo ">> Done"
