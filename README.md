@@ -3,18 +3,12 @@
 ## Installation
 1. Clone this repo in some directory.
 ```
-cd <some_directory>
-```
-```
-git clone git@github.com:faurealban/dotfiles
+cd <some_directory> && git clone git@github.com:faurealban/dotfiles fa_dots
 ```
 
 2. Execute the installation script
 ```
-chmod +x ./install.sh
-```
-```
-./install.sh -b
+cd fa_dots && chmod +x ./install.sh && ./install.sh -b
 ```
 
 > [!WARNING]
