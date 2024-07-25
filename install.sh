@@ -1,12 +1,18 @@
 #!/bin/bash
 
+# get args
 POSITIONAL_ARGS=()
-BACKUP="no"
+BACKUP=""
+KOREAN=""
 
 while [[ $# -gt 0 ]]; do
     case $1 in
         -b|--backup)
-            BACKUP="yes"
+            BACKUP="-b"
+            shift
+            ;;
+        -k|--korean)
+            KOREAN="fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-hangul fcitx5-qt"
             shift
             ;;
         -*|--*)
@@ -20,13 +26,16 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-if [[ "$BACKUP" == "yes" ]]; then
-    cp -r ~/.config ~/.config_backup_fa
-    # TODO
-fi
-
 # install programs
-sudo pacman -S fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-hangul fcitx5-qt grim hypridle hyprland hyprlock hyprpaper hyprshade kitty neovim obsidian ttf-jetbrains-mono-nerd tuigreet
+sudo pacman -S "$KOREAN" grim hypridle hyprland hyprlock hyprpaper hyprshade kitty neovim obsidian ttf-jetbrains-mono-nerd tuigreet
 
 # install config files
-# TODO
+mv "$BACKUP" ./other/bash/.bash_profile ~/.bash_profile
+mv "$BACKUP" ./other/bash/.bashrc ~/.bashrc
+[[ "$KOREAN" != "" ]] && mv "$BACKUP" ./.config/fcitx5/ ~/.config/
+mv "$BACKUP" ./.config/hypr/ ~/.config/
+mv "$BACKUP" ./.config/kitty/ ~/.config/
+mv "$BACKUP" ./.config/nvim/ ~/.config/
+mv "$BACKUP" ./.config/obsidian/Preferences ~/.config/obsidian/Preferences
+mv "$BACKUP" ./.config/scripts/ ~/.config/
+mv "$BACKUP" ./other/greetd/config.toml /etc/greetd/config.toml

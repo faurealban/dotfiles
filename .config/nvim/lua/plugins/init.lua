@@ -53,4 +53,11 @@ return {
             vim.fn["mkdp#util#install"]()
         end,
     },
+
+    {
+        "folke/todo-comments.nvim",
+        dependencies = {},
+        opts = {},
+        lazy = false,
+    },
 }

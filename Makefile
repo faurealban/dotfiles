@@ -9,13 +9,13 @@ all:
 	@rm -rf ./other/bash/.bashrc
 	@cp ~/.bashrc ./other/bash/.bashrc
 
+	@# fcitx5
+	@rm -rf ./.config/fcitx5/
+	@cp -r ~/.config/fcitx5/ ./.config/
+
 	@# hypr ecosystem
 	@rm -rf ./.config/hypr/
 	@cp -r ~/.config/hypr/ ./.config/
-
-	@# scripts
-	@rm -rf ./.config/scripts/
-	@cp -r ~/.config/scripts/ ./.config/
 
 	@# kitty
 	@rm -rf ./.config/kitty/
@@ -25,16 +25,16 @@ all:
 	@rm -rf ./.config/nvim/
 	@cp -r ~/.config/nvim/ ./.config/
 
+	@# obsidian
+	@rm -rf ./.config/obsidian/Preferences
+	@cp ~/.config/obsidian/Preferences ./.config/obsidian/Preferences
+
+	@# scripts
+	@rm -rf ./.config/scripts/
+	@cp -r ~/.config/scripts/ ./.config/
+
 	@# tuigreet
 	@rm -rf ./other/greetd/config.toml
 	@cp -r /etc/greetd/config.toml ./other/greetd/config.toml
-
-	@# fcitx5
-	@rm -rf ./.config/fcitx5/
-	@cp -r ~/.config/fcitx5/ ./.config/
-
-	@# obsidian
-	@rm -rf ./.config/obsidian/Preferences
-	@cp -r ~/.config/obsidian/Preferences ./.config/obsidian/Preferences
 
 	@echo ">> Done"
