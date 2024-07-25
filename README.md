@@ -1,5 +1,5 @@
 # Installation
-1. Clone this repo in some directory.
+1. Clone this repo in some directory
 ```
 cd <some_directory> && git clone git@github.com:faurealban/dotfiles fa_dots
 ```
