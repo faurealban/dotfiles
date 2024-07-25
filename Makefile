@@ -30,7 +30,11 @@ all:
 	@cp -r /etc/greetd/config.toml ./other/greetd/config.toml
 
 	@# fcitx5
-	@rm -rf ./.config/fcitx5
+	@rm -rf ./.config/fcitx5/
 	@cp -r ~/.config/fcitx5/ ./.config/
+
+	@# obsidian
+	@rm -rf ./.config/obsidian/Preferences
+	@cp -r ~/.config/obsidian/Preferences ./.config/obsidian/Preferences
 
 	@echo ">> Done"
