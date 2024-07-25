@@ -21,7 +21,6 @@ disable_bluetooth ()
 }
 
 POSITIONAL_ARGS=()
-
 MOUSE="no"
 HEADPHONES="no"
 ALL="no"
@@ -41,7 +40,7 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         -*|--*)
-            echo "Unknown option $1"
+            echo "|> Unknown option $1"
             exit 1
             ;;
         *)

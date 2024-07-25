@@ -7,7 +7,6 @@ alias grep="grep --color=auto"
 alias bat="~/.config/scripts/utils/get_battery_capacity.sh"
 alias col="~/.config/scripts/utils/show_colors.sh"
 alias bt="~/.config/scripts/bluetooth/onoff.sh"
-alias conf="nvim ~/.config/"
 
 alias commit="git add . && git commit -m"
 alias push="git push"
