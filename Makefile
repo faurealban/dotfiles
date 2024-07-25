@@ -29,4 +29,8 @@ all:
 	@rm -rf ./other/greetd/config.toml
 	@cp -r /etc/greetd/config.toml ./other/greetd/config.toml
 
+	@# fcitx5
+	@rm -rf ./.config/fcitx5
+	@cp -r ~/.config/fcitx5/ ./.config/
+
 	@echo ">> Done"
