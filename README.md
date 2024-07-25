@@ -3,6 +3,7 @@
 ## Installation
 1. Clone this repo in some directory.
 ```
+cd <some_directory>
 git clone git@github.com:faurealban/dotfiles
 ```
 
@@ -36,3 +37,4 @@ chmod +x ./install.sh
 ![](./preview/2.png)
 ![](./preview/3.png)
 ![](./preview/4.png)
+![](./preview/5.png)
