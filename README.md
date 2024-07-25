@@ -1,6 +1,4 @@
-# My dotfiles
-
-## Installation
+# Installation
 1. Clone this repo in some directory.
 ```
 cd <some_directory> && git clone git@github.com:faurealban/dotfiles fa_dots
@@ -15,9 +13,8 @@ cd fa_dots && chmod +x ./install.sh && ./install.sh -b
 > Using script with the option `-b` or `--backup` is recommended.
 > It creates a backup of your actual config, just in case.
 
-## Programs
+# Programs
 
-- fcitx5
 - greetd
 - grim
 - hypridle
@@ -29,7 +26,10 @@ cd fa_dots && chmod +x ./install.sh && ./install.sh -b
 - obsidian
 - tuigreet
 
-## Preview
+#### Optional
+- fcitx5 *(option: `-k` or `--korean`; korean keyboard layout)*
+
+# Preview
 
 ![](./preview/1.png)
 ![](./preview/2.png)
