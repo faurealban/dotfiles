@@ -26,6 +26,7 @@ return {
                 "prettier",
                 "pyright",
                 "rust-analyzer",
+                "tsserver",
             },
         },
     },

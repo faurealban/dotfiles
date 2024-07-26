@@ -1,6 +1,10 @@
 .PHONY: all
 
 all:
+	@# ags
+	@rm -rf ./.config/ags/
+	@cp -r ~/.config/ags/ ./.config/
+
 	@# bash_profile
 	@rm -rf ./other/bash/.bash_profile
 	@cp ~/.bash_profile ./other/bash/.bash_profile

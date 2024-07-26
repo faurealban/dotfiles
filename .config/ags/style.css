@@ -1,0 +1,26 @@
+* {
+    background-color: transparent;
+}
+
+.Module {
+    background-color: #121211;
+    border: 2px solid #faca16;
+    border-radius: 12px;
+    padding: 16px;
+    min-width: 150px;
+    min-height: 150px;
+    color: #dddddd;
+    font-size: 32px;
+}
+
+.CIcon {
+    color: #dddddd;
+    font-size: 48px;
+}
+
+/* Battery */
+#battery-circularProgress {
+    min-width: inherit;
+    min-height: inherit;
+    font-size: 22px;
+}
