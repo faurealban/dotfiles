@@ -8,6 +8,7 @@ alias bat="~/.config/scripts/utils/get_battery_capacity.sh"
 alias col="~/.config/scripts/utils/show_colors.sh"
 alias bt="~/.config/scripts/bluetooth/onoff.sh"
 alias csh="~/.config/scripts/utils/cycle_shaders.sh"
+alias maintenance="~/.config/scripts/utils/maintenance.sh"
 
 alias commit="git add . && git commit -m"
 alias push="git push"
