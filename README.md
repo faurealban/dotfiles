@@ -2,6 +2,7 @@
 
 ## Programs
 
+- ags
 - fcitx5
 - greetd
 - grim
