@@ -13,14 +13,18 @@
     font-size: 32px;
 }
 
+.CircularProgress {
+    min-width: inherit;
+    min-height: inherit;
+    font-size: 22px;
+    border: 2px solid red;
+}
+
 .CIcon {
     color: #dddddd;
     font-size: 48px;
 }
 
-/* Battery */
-#battery-circularProgress {
-    min-width: inherit;
-    min-height: inherit;
-    font-size: 22px;
+#time-label {
+    font-size: 58px;
 }

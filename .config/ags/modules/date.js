@@ -1,4 +1,4 @@
-import {date} from "./services.js"
+import { date } from "./services.js"
 
 export function date_widget() {
     return Widget.Box({

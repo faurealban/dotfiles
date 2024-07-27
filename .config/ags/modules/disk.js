@@ -1,6 +1,6 @@
-import { battery_capacity } from "./services.js"
+import { disk_space } from "./services.js"
 
-export function battery_widget() {
+export function disk_widget() {
     return Widget.Box({
         className: "Module",
         children: [
@@ -8,10 +8,9 @@ export function battery_widget() {
                 className: "CircularProgress",
                 startAt: 0.75,
                 endAt: 0.75,
-                value: battery_capacity.bind().as(p => p / 100),
+                value: disk_space.bind().as(p => p / 100),
                 child: Widget.Label({
-                    className: "CIcon",
-                    label: "󰁹"
+                    label: "SPC"
                 })
             })
         ]
