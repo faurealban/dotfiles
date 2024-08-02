@@ -4,14 +4,12 @@ return {
         event = "BufWritePre",
         opts = require "configs.conform",
     },
-
     {
         "neovim/nvim-lspconfig",
         config = function()
             require "configs.lspconfig"
         end,
     },
-
     {
         "nvim-treesitter/nvim-treesitter",
         opts = {
@@ -29,5 +27,13 @@ return {
         dependencies = { "nvim-lua/plenary.nvim" },
         opts = {},
         lazy = false,
+    },
+    {
+        "nvim-tree/nvim-tree.lua",
+        config = {
+            filters = {
+                dotfiles = false,
+            },
+        },
     },
 }
