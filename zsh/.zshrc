@@ -12,3 +12,4 @@ alias commit="git add . && git commit -m"
 alias push="git push"
 
 alias dots="cd ~/gits/dotfiles/ && nvim"
+alias conf="cd ~/.config/ && nvim"
