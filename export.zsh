@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # configs in ~/.config
-programs=("hypr" "nvim" "foot")
+programs=("hypr" "nvim" "foot" "zsh")
 
 for p in "${programs[@]}"
 do

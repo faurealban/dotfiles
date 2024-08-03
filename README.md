@@ -10,3 +10,11 @@ Run `export.zsh`
 ## Preview
 
 *TODO*
+
+## Other
+
+### Dependencies
+
+```
+sudo pacman -S foot hyprland neovim pipewire pipewire-pulse ttf-jetbrains-mono-nerd ttf-ubuntu-mono-nerd ttf-ubuntu-nerd wireplumber zsh
+```

@@ -1,8 +1,8 @@
 # colors
 autoload -U colors && colors
 
-# prompt
-PS1="%n - %/ > "
+# prompt theme
+source ~/.config/zsh/.zshrc
 
 # aliases
 alias ls="ls -a --color=auto"

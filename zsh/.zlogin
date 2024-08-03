@@ -1,1 +1,1 @@
-Hyprland
+source ~/.config/zsh/.zlogin
