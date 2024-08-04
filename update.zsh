@@ -17,7 +17,7 @@ done
 
 # specific configs
 cp -r ~/.mozilla/firefox/*.default-release/chrome/ ./firefox/
-mkdir ./zsh/home
+rm -rf ./zsh/home && mkdir ./zsh/home
 cp ~/.zshrc ./zsh/home/
 cp ~/.zlogin ./zsh/home/
 
