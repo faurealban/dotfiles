@@ -1,8 +1,10 @@
+source ~/.config/zsh/themes/min_bw.zsh
+
+# break line before next prompt
+precmd() { print "" }
+
 # colors
 autoload -U colors && colors
-
-# prompt theme
-source ~/.config/zsh/.zshrc
 
 # aliases
 alias ls="ls -a --color=auto"
