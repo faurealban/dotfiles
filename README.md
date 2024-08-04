@@ -2,7 +2,7 @@
 
 ## Installation
 
-Run `export.zsh`
+Run `install.zsh`
 
 > [!WARNING]
 > This will overwrite your configs. Backup recommended. Use at your own risk.
