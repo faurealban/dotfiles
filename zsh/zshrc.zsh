@@ -7,7 +7,7 @@ precmd() { print "" }
 autoload -U colors && colors
 
 # aliases
-alias ls="ls -a --color=auto"
+alias ls="ls -A --color=auto"
 alias grep="grep --color=auto"
 
 alias commit="git add . && git commit -m"
