@@ -17,3 +17,4 @@ alias dots="cd ~/gits/dotfiles/ && nvim"
 alias conf="cd ~/.config/ && nvim"
 
 alias ath="~/.config/scripts/ui/change_theme.zsh"
+alias o="cd ~/gits/project-o/ && nvim"
