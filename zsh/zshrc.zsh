@@ -15,3 +15,5 @@ alias push="git push"
 
 alias dots="cd ~/gits/dotfiles/ && nvim"
 alias conf="cd ~/.config/ && nvim"
+
+alias ath="~/.config/scripts/ui/change_theme.zsh"

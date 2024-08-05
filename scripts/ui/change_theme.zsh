@@ -63,7 +63,20 @@ done
 # apply color theme
 if [[ -n "$COLORS" ]]; then
     echo ">> Applying color theme '$COLORS'"
-    # TODO: actually apply the color theme
+    # foot
+    sed -i "s;.*include=~/.config/foot/themes/.*;include=~/.config/foot/themes/$COLORS.ini;" ~/.config/foot/foot.ini
+
+    # hypr
+    sed -i "s;.*source = ./themes/.*;source = ./themes/$COLORS.conf;" ~/.config/hypr/hyprland.conf
+
+    # nvim
+    sed -i "s;.*local theme = .*;local theme = $COLORS;" ~/.config/nvim/lua/chadrc.lua
+
+    # zsh
+    sed -i "s;.*source ~/.config/zsh/themes/.*;source ~/.config/zsh/themes/$COLORS.zsh;" ~/.config/zsh/zshrc.zsh
+    
+    # kill ps to update confs
+    pkill foot
 fi
 
 # apply layout theme
