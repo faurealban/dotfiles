@@ -1,5 +1,7 @@
 source ~/.config/zsh/themes/min_bw.zsh
 
+export PATH=$PATH:$HOME/.cargo/bin/
+
 # break line before next prompt
 precmd() { print "" }
 
