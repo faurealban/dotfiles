@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "bashls" }
+local servers = { "html", "cssls" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
@@ -18,3 +18,9 @@ end
 
 -- Rust: rust-analyzer
 lspconfig.rust_analyzer.setup {}
+
+-- CMake
+lspconfig.cmake.setup {}
+
+-- C: clangd
+lspconfig.clangd.setup {}

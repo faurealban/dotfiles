@@ -20,5 +20,6 @@ rm -rf ~/.mozilla/firefox/*.default-release/chrome
 cp -r ./firefox/chrome/ ~/.mozilla/firefox/*.default-release/
 cp ./zsh/home/.zshrc ~/.zshrc
 cp ./zsh/home/.zlogin ~/.zlogin
+cp ./other/.clang-format ~/.clang-format
 
 echo ">> Done"
