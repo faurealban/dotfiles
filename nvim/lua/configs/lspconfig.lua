@@ -15,3 +15,6 @@ for _, lsp in ipairs(servers) do
         capabilities = nvlsp.capabilities,
     }
 end
+
+-- Rust: rust-analyzer
+lspconfig.rust_analyzer.setup {}
