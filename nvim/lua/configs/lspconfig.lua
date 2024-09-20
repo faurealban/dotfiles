@@ -16,11 +16,6 @@ for _, lsp in ipairs(servers) do
     }
 end
 
--- Rust: rust-analyzer
 lspconfig.rust_analyzer.setup {}
-
--- CMake
 lspconfig.cmake.setup {}
-
--- C: clangd
 lspconfig.clangd.setup {}
