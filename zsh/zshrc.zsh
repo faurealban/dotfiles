@@ -11,6 +11,7 @@ autoload -U colors && colors
 # aliases
 alias ls="ls -A --color=auto"
 alias grep="grep --color=auto"
+alias tree="tree -C"
 
 alias commit="git add . && git commit -m"
 alias push="git push"
