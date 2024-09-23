@@ -16,6 +16,11 @@ show_help() {
 }
 
 # get args
+if [[ $# -eq 0 ]]; then
+    show_help
+    exit 1
+fi
+
 while [[ $# -gt 0 ]]; do
     case $1 in
         -c|--colors)
@@ -68,6 +73,7 @@ if [[ -n "$COLORS" ]]; then
 
     # hypr
     sed -i "s;.*source = ./themes/.*;source = ./themes/$COLORS.conf;" ~/.config/hypr/hyprland.conf
+    sed -i "s;.*wallpaper = , ./wallpapers/.*;wallpaper = , ./wallpapers/$COLORS.png;" ~/.config/hypr/hyprpaper.conf
 
     # nvim
     sed -i "s;.*local theme = .*;local theme = $COLORS;" ~/.config/nvim/lua/chadrc.lua
@@ -82,5 +88,5 @@ fi
 # apply layout theme
 if [[ -n "$LAYOUT" ]]; then
     echo ">> Applying layout theme '$LAYOUT'"
-    # TODO: actually apply the layout theme
+    # TODO: apply the layout theme
 fi

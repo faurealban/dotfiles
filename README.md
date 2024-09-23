@@ -16,5 +16,5 @@ Run `install.zsh`
 ### Dependencies
 
 ```
-sudo pacman -S deno foot go hyprland neovim pipewire pipewire-pulse ripgrep rust rust-analyzer tlp ttf-ubuntu-mono-nerd ttf-ubuntu-nerd wireplumber zsh
+sudo pacman -S deno foot go grim hyprland hyprpaper neovim pipewire pipewire-pulse ripgrep rust rust-analyzer tlp ttf-ubuntu-mono-nerd ttf-ubuntu-nerd wireplumber zsh
 ```
