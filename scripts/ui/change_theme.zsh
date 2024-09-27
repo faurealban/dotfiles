@@ -5,7 +5,7 @@ show_help() {
     echo
     echo "Usage: /path_to_this_file/change_theme.zsh [option value] [option value] ..."
     echo
-    echo "    Options:            Values:        Description:"
+    echo "Options:                Values:        Description:"
     echo "    -c, --colors        min_bw         Change color theme"
     echo "                        min_wb"
     echo
@@ -67,13 +67,13 @@ done
 
 # apply color theme
 if [[ -n "$COLORS" ]]; then
-    echo ">> Applying color theme '$COLORS'"
     # foot
     sed -i "s;.*include=~/.config/foot/themes/.*;include=~/.config/foot/themes/$COLORS.ini;" ~/.config/foot/foot.ini
 
     # hypr
     sed -i "s;.*source = ./themes/.*;source = ./themes/$COLORS.conf;" ~/.config/hypr/hyprland.conf
-    sed -i "s;.*wallpaper = , ./wallpapers/.*;wallpaper = , ./wallpapers/$COLORS.png;" ~/.config/hypr/hyprpaper.conf
+    sed -i "s;.*wallpaper = .*;wallpaper = , ~/.config/hypr/wallpapers/$COLORS.png;"
+    hyprctl hyprpaper wallpaper ", ~/.config/hypr/wallpapers/$COLORS.png"
 
     # nvim
     sed -i "s;.*local theme = .*;local theme = $COLORS;" ~/.config/nvim/lua/chadrc.lua
@@ -87,6 +87,5 @@ fi
 
 # apply layout theme
 if [[ -n "$LAYOUT" ]]; then
-    echo ">> Applying layout theme '$LAYOUT'"
     # TODO: apply the layout theme
 fi
