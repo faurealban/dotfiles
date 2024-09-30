@@ -19,7 +19,7 @@ alias push="git push"
 alias dots="cd ~/gits/dotfiles/ && nvim"
 alias conf="cd ~/.config/ && nvim"
 alias o="cd ~/gits/project-o/ && nvim"
-alias ctf="cd ~/gits/ctf"
+alias ctf="cd ~/gits/ctf && nvim"
 
 alias ath="~/.config/scripts/ui/change_theme.zsh"
 alias bat="cat /sys/class/power_supply/BAT1/capacity"
