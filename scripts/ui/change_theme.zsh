@@ -74,6 +74,7 @@ if [[ -n "$COLORS" ]]; then
     sed -i "s;.*source = ./themes/.*;source = ./themes/$COLORS.conf;" ~/.config/hypr/hyprland.conf
     sed -i "s;.*wallpaper = .*;wallpaper = , ~/.config/hypr/wallpapers/$COLORS.png;"
     hyprctl hyprpaper wallpaper ", ~/.config/hypr/wallpapers/$COLORS.png"
+    sed -i "s;.*source = ./locks/.*;source = ./locks/$COLORS.conf;" ~/.config/hypr/hyprlock.conf
 
     # nvim
     sed -i "s;.*local theme = .*;local theme = $COLORS;" ~/.config/nvim/lua/chadrc.lua
