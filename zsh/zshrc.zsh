@@ -23,3 +23,6 @@ alias ctf="cd ~/gits/ctf && nvim"
 
 alias ath="~/.config/scripts/ui/change_theme.zsh"
 alias bat="cat /sys/class/power_supply/BAT1/capacity"
+
+alias weekly="~/.config/scripts/maintenance/weekly.zsh"
+alias monthly="~/.config/scripts/maintenance/monthly.zsh"
