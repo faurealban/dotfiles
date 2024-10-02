@@ -26,3 +26,5 @@ alias bat="cat /sys/class/power_supply/BAT1/capacity"
 
 alias weekly="~/.config/scripts/maintenance/weekly.zsh"
 alias monthly="~/.config/scripts/maintenance/monthly.zsh"
+alias install="~/.config/scripts/maintenance/install.zsh"
+alias uninstall="~/.config/scripts/maintenance/uninstall.zsh"
