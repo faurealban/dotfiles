@@ -20,3 +20,4 @@ lspconfig.rust_analyzer.setup {}
 lspconfig.cmake.setup {}
 lspconfig.clangd.setup {}
 lspconfig.pyright.setup {}
+lspconfig.texlab.setup {}
