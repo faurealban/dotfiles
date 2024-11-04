@@ -1,20 +1,47 @@
 # My dotfiles
+## Preview
+![](./preview/terminal.png)
+![](./preview/nvim.png)
 
 ## Installation
-
-Run `install.zsh`
+If you only want some specific configuration, search in this repo.\
+If you want everything: run `install.zsh`
 
 > [!WARNING]
 > This will overwrite your configs. Backup recommended. Use at your own risk.
 
-## Preview
-
-*TODO*
-
-## Other
-
-### Dependencies
-
+After istallation, do:
 ```
-sudo pacman -S deno foot go grim hypridle hyprland hyprlock hyprpaper neovim pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tlp ttf-cousine-nerd ttf-jetbrains-mono-nerd ttf-ubuntu-mono-nerd ttf-ubuntu-nerd wireplumber zsh
+nvim
+:Lazy sync
+:MasonInstallAll
 ```
+
+## Included
+- brightnessctl
+- deno
+- discord
+- dolphin
+- dunst
+- foot
+- go
+- grim
+- hypridle
+- hyprland
+- hyprlock
+- hyprpaper
+- librewolf
+- neovim
+- npm
+- openssh
+- pacman-contrib
+- pipewire
+- pipewire-pulse
+- reflector
+- ripgrep
+- rust
+- rust-analyzer
+- tree
+- ttf-jetrbrains-mono-nerd
+- unzip wireplumber
+- wl-clipboard zsh

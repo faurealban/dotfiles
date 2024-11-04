@@ -51,3 +51,6 @@ require("peek").setup {
     throttle_at = 200000,
     throttle_time = "auto",
 }
+
+-- open nvim-tree at startup
+require("nvim-tree.api").tree.open()

@@ -1,17 +1,18 @@
-source ~/.config/zsh/themes/min_bw.zsh
+# Prompt
+PS1="%F{blue} %K{blue}%F{black} 󰉋 %/ %k%F{blue}%F{blue} %f "
 
 export PATH=$PATH:$HOME/.cargo/bin/
 
-# break line before next prompt
+# Break line before next prompt
 precmd() { print "" }
 
-# colors
+# Colors
 autoload -U colors && colors
 
-# aliases
+# Aliases
 alias ls="ls -A --color=auto"
 alias grep="grep --color=auto"
-alias tree="tree -C"
+alias tree="tree -C -L 3"
 
 alias commit="git add . && git commit -m"
 alias push="git push"
@@ -22,7 +23,6 @@ alias o="cd ~/gits/project-o/ && nvim"
 alias ctf="cd ~/gits/ctf && nvim"
 alias docs="cd ~/gits/docs && nvim"
 
-alias ath="~/.config/scripts/ui/change_theme.zsh"
 alias bat="cat /sys/class/power_supply/BAT1/capacity"
 
 alias weekly="~/.config/scripts/maintenance/weekly.zsh"

@@ -1,8 +1,7 @@
 #!/bin/zsh
 
-# directories in ~/.config
+# Copy config directories in ~/.config
 confs=(
-    "firefox"
     "foot"
     "hypr"
     "nvim"
@@ -15,8 +14,7 @@ for p in "${confs[@]}"; do
     cp -r ~/.config/"$p" ./
 done
 
-# specific configs
-cp -r ~/.mozilla/firefox/*.default-release/chrome/ ./firefox/
+# Copy other configs
 rm -rf ./zsh/home && mkdir ./zsh/home
 cp ~/.zshrc ./zsh/home/
 cp ~/.zlogin ./zsh/home/
