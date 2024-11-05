@@ -20,7 +20,6 @@ nvim
 ## Included
 - brightnessctl
 - deno
-- discord
 - docker
 - docker-compose
 - dolphin
@@ -46,9 +45,9 @@ nvim
 - tree
 - ttf-jetbrains-mono-nerd
 - unzip
+- vesktop-bin
 - virtualbox
 - virtualbox-host-modules-arch
 - wireplumber
 - wl-clipboard
-- xdg-desktop-portal-hyprland
 - zsh
