@@ -8,7 +8,7 @@ cd ~/gits/yay
 makepkg -si
 
 # Install programms
-sudo pacman -S brightnessctl deno docker docker-compose dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip virtualbox virtualbox-host-modules-arch wireplumber wl-clipboard zsh
+sudo pacman -S brightnessctl deno docker docker-compose dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip virtualbox virtualbox-host-modules-arch wireplumber wl-clipboard xdg-desktop-portal-hyprland zsh
 yay -S librewolf-bin vesktop-bin
 
 # Copy config directories in ~/.config
@@ -48,5 +48,9 @@ else
 
     echo ">> Docker config done. Reboot needed"
 fi
+
+# Environnement variables
+ELECTRON_OZONE_PLATFORM_HINT=wayland
+ELECTRON_USE_OZONE=1
 
 echo ">> Done"
