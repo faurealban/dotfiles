@@ -50,4 +50,5 @@ nvim
 - virtualbox-host-modules-arch
 - wireplumber
 - wl-clipboard
+- xdg-desktop-portal-hyprland
 - zsh

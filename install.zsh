@@ -8,7 +8,7 @@ cd ~/gits/yay
 makepkg -si
 
 # Install programms
-sudo pacman -S brightnessctl deno discord docker docker-compose dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip virtualbox virtualbox-host-modules-arch wireplumber wl-clipboard zsh
+sudo pacman -S brightnessctl deno discord docker docker-compose dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip virtualbox virtualbox-host-modules-arch wireplumber wl-clipboard xdg-desktop-portal-hyprland zsh
 yay -S librewolf-bin
 
 # Copy config directories in ~/.config
