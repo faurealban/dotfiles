@@ -46,6 +46,8 @@ nvim
 - tree
 - ttf-jetbrains-mono-nerd
 - unzip
+- virtualbox
+- virtualbox-host-modules-arch
 - wireplumber
 - wl-clipboard
 - zsh
