@@ -8,7 +8,7 @@ cd ~/gits/yay
 makepkg -si
 
 # Install programms
-sudo pacman -S brightnessctl deno discord dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetrbrains-mono-nerd unzip wireplumber wl-clipboard zsh
+sudo pacman -S brightnessctl deno discord docker docker-compose dolphin dunst foot go grim hypridle hyprland hyprlock hyprpaper neovim npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip wireplumber wl-clipboard zsh
 yay -S librewolf-bin
 
 # Copy config directories in ~/.config
@@ -35,5 +35,18 @@ chsh -s /usr/bin/zsh
 
 # Create new directory for screenshots
 mkdir ~/Pictures
+
+# First docker config if needed
+if id -nG "$USER" | grep -qw "docker"; then
+else
+    # Enable and start docker.socket
+    systemctl enable docker.socket
+    systemctl start docker.socket
+
+    # Add user to docker group
+    sudo usermod -aG docker $USER
+
+    echo ">> Docker config done. Reboot needed"
+fi
 
 echo ">> Done"

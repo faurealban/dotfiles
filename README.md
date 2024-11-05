@@ -21,6 +21,8 @@ nvim
 - brightnessctl
 - deno
 - discord
+- docker
+- docker-compose
 - dolphin
 - dunst
 - foot
@@ -42,6 +44,8 @@ nvim
 - rust
 - rust-analyzer
 - tree
-- ttf-jetrbrains-mono-nerd
-- unzip wireplumber
-- wl-clipboard zsh
+- ttf-jetbrains-mono-nerd
+- unzip
+- wireplumber
+- wl-clipboard
+- zsh
