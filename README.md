@@ -52,4 +52,5 @@ nvim
 - wireplumber
 - wl-clipboard
 - xdg-desktop-portal-hyprland
+- zoom
 - zsh
