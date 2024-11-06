@@ -53,6 +53,7 @@ else
 fi
 
 # Environnement variables
+# Screen sharing
 ELECTRON_OZONE_PLATFORM_HINT=wayland
 ELECTRON_USE_OZONE=1
 
