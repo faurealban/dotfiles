@@ -31,7 +31,7 @@ fi
 
 # Install programms
 sudo pacman -S --needed brightnessctl deno docker docker-compose dolphin fcitx5 fcitx5-configtool fcitx5-gtk fcitx5-hangul fcitx5-im fcitx5-qt foot go grim hypridle hyprland hyprlock hyprpaper neovim noto-fonts-cjk noto-fonts-emoji npm openssh pacman-contrib pipewire pipewire-pulse reflector ripgrep rust rust-analyzer tree ttf-jetbrains-mono-nerd unzip virtualbox virtualbox-host-modules-arch wireplumber wl-clipboard xdg-desktop-portal-hyprland zsh
-yay -S --needed droidcam librewolf-bin vesktop-bin zoom
+yay -S --needed droidcam librewolf-bin vesktop-bin
 
 # Change kernel
 chsh -s /usr/bin/zsh

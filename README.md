@@ -32,7 +32,6 @@ nvim
 - vesktop
 - virtualbox
 - wl-clipboard
-- zoom
 - zsh
 
 For a more detailled list, take a look at [install.zsh](./install.zsh)
