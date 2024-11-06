@@ -23,6 +23,7 @@ nvim
 - docker
 - dolphin
 - droidcam
+- fcitx5
 - foot
 - grim
 - hypridle
