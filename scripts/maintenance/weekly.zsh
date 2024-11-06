@@ -4,4 +4,5 @@
 sudo pacman -Qdtq | pacman -Rns -
 
 # Update system
-sudo pacman -Syu
+# sudo pacman -Syu
+yay

@@ -24,7 +24,6 @@ nvim
 - docker-compose
 - dolphin
 - droidcam
-- dunst
 - foot
 - go
 - grim
