@@ -23,6 +23,7 @@ nvim
 - docker
 - docker-compose
 - dolphin
+- droidcam
 - dunst
 - foot
 - go
