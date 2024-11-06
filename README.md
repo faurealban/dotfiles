@@ -33,6 +33,7 @@ nvim
 - hyprpaper
 - librewolf
 - neovim
+- noto-fonts-cjk
 - npm
 - openssh
 - pacman-contrib
