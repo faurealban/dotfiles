@@ -18,32 +18,21 @@ nvim
 ```
 
 ## Included
-- brightnessctl
-- deno
 - docker
 - dolphin
 - droidcam
 - fcitx5
 - foot
-- grim
-- hypridle
-- hyprland
-- hyprlock
-- hyprpaper
+- hyprland + some of its ecosystem's utils
 - librewolf
 - neovim
-- noto-fonts-cjk
 - openssh
-- pacman-contrib
 - pipewire
-- pipewire-pulse
-- reflector
-- ripgrep
-- ttf-jetbrains-mono-nerd
 - unzip
-- vesktop-bin
+- vesktop
 - virtualbox
-- wireplumber
 - wl-clipboard
 - zoom
 - zsh
+
+For a more detailled list, take a look at [install.zsh](./install.zsh)
