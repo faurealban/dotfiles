@@ -1,5 +1,5 @@
 # Prompt
-PS1="%F{blue} %K{blue}%F{black} 󰉋 %/ %k%F{blue}%F{blue} %f "
+PS1="%B%F{red} %   %F{green}%T %F{blue}%/%f%k > %f%k%b"
 
 export PATH=$PATH:$HOME/.cargo/bin/
 
