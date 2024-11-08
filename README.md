@@ -10,12 +10,16 @@ If you want everything: run `install.zsh`
 > [!WARNING]
 > This will overwrite your configs. Backup recommended. Use at your own risk.
 
-After istallation, do:
+## After install
+### Nvim
 ```
 nvim
 :Lazy sync
 :MasonInstallAll
 ```
+
+### Droidcam
+Add `v4l2loopback` to `/boot/loader/entries/*_linux.conf`
 
 ## Included
 - docker
@@ -26,12 +30,9 @@ nvim
 - hyprland + some of its ecosystem's utils
 - librewolf
 - neovim
-- openssh
 - pipewire
-- unzip
 - vesktop
 - virtualbox
-- wl-clipboard
 - zsh
 
 For a more detailled list, take a look at [install.zsh](./install.zsh)
