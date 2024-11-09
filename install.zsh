@@ -36,8 +36,9 @@ yay -S --needed droidcam librewolf-bin vesktop-bin
 # Change kernel
 chsh -s /usr/bin/zsh
 
-# Create new directory for screenshots
+# Create directories
 mkdir ~/Pictures
+mkdir ~/vms
 
 # First docker config if needed
 if id -nG "$USER" | grep -qw "docker"; then
